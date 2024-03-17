@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Gallery</title>
+    <style>
+        body {
+          font-family: sans-serif;
+          color: rgb(1, 0, 0);
+      }
+      header {
+         grid-area: header;
+         color: #5D7586;
+         padding-top: 20px;
+         padding-left: 178px;
+         font-size: 30px;
+      }
+          .container {
+        max-width: 960px;
+        padding-top: 35px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 8px;
+     }
+        
+       .box {
+           height: 120px;
+           background-image: url("../img/img.png") ;
+           background-color: rgb(115, 160, 226) ;
+           margin-left: 35px;
+           margin-bottom: 25px;
+           border-radius: 10%;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: 150px;
+           opacity: 95%;
+    }
+
+        .desc{
+            display: grid;
+            background-color: white;
+            border-bottom-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+            padding-left: 35px;
+            font-size: 15px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            width: 160;
+            height: 20px;
+            border-style: solid 2px black;   
+        }
+
+        @media screen and (max-width: 960px) {
+         .container {
+        grid-template-columns: repeat(5, 1fr);
+       }
+     }
+     @media screen and (max-width: 604px) {
+        .container {
+        grid-template-columns: repeat(3, 1fr);
+       }
+    }
+       
+     @media screen and (max-width: 550px) {
+        .container {
+        grid-template-columns: repeat(1, 1fr);
+       }
+    }
+    
+        .text{
+            width:auto;
+            font-size: 17px;
+            font-family: sans-serif;
+            margin-top: 25px;
+            text-align: center;
+        }
+        
+        p{
+            font-size: 18px;
+            display: grid;
+        }
+            
+        @media screen and (max-width: 960px) {
+          p{
+                font-size: 17px;
+            }
+
+        }
+    
+       @media screen and (max-width: 604px) {
+          p {
+             font-size: 14px;
+            }
+        }
+ 
+       @media screen and (max-width: 550px) {
+          p {
+           font-size: 13px;
+          }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>Gallery Heading</header>
+    <div class="container">
+    <div class="box" id="box-1">
+        <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-2">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-3">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-4">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-5">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-6">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-7">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-8">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-9">
+            <div class="desc">Image Title</div>
+    </div>
+        <div class="box" id="box-10">
+            <div class="desc">Image Title</div>
+    </div>
+    </div>
+    
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lacinia nisi, nec tristique sem. Cras id tellus ac<br>
+                mauris posuere varius. Pellentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent<br>
+                commodo euismond odio, eu pharetra nulla dignissim nec. Ut id nulla augue. Duis ultricies euismod purus, ut<br>
+                pretium augue molestie a. Nullam ut malesuada enim. Integer non velit fringilla, porta ex vitae,<br>
+                porttitor velit. Ut luctus lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor.
+</body>
+</html>
